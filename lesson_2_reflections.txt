@@ -10,12 +10,24 @@ git status	show all files whicht are untracked by Git at the moment
 What happens when you initialize a repository? Why do you need to do it?
 Git creates an empty, hidden map (.git), but does not create any commit for files. This need to be done manually
 
-git commit	create a commit
-	BUT
 	better to store multiple files in a 'Staging area' to match them into one commit
 git add		add files to the 'Staging area'
+
+git commit				create a commit via the chosen standard editor
+git commit -m "commit message"		create a commit without using an editor	
 
 How is the staging area differnt from the working directory and the repository? What value do you think it offers?
 The staging area collects a manual selection of the files which can be found in the working directory, but the files are
 not sored in the repository yet. This helps to gain control over which files to add in one single commit.
 
+_________________
+				Compares
+git diff			working directory	to	staging area
+git diff --staged		staging area		to 	commit 1 	(most recent commit in repository)
+git diff commit 1 commit 2	commit 1		to 	commit 2	(the second most recent commit)
+
+git reset --hard	discard any changes in the working directory and the staging area 
+	VERY CAREFULLY USE	cannot be undone
+
+git checkout master		if git checkout is used to run a version of an old commit, 
+				git checkout master will change back to the most recent version
