@@ -1,0 +1,11 @@
+diff -u 	comparing tow files which are not in the same repository
+
+ls -a 		list all files (also hidden, e.g. .git) which are in the currend dicrectory
+
+git init	initialize (or create) a new, empty Git repository
+			git does not create any commmit when the repository is first created
+
+git status	show all files whicht are untracked by Git at the moment
+
+What happens when you initialize a repository? Why do you need to do it?
+Git creates an empty, hidden map (.git), but does not create any commit for files. This need to be done manually

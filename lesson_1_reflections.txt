@@ -1,0 +1,100 @@
+Basic commands for command control (cmd)
+cd.. or cd~				shorten directory path shown in cmd window by 1
+cd "name of directory"			increase length of directory path shown in cmd by 1
+mkdir "name of directory"		create a new direcory
+copy nul > "name of file.txt"		create an empty txt file
+start notepad "name of file.txt"	open txt file with notepad
+
+How did viewing a diff between two versions of a file help you see the bug that was introduced?
+1) insert directory path in cmd
+2) FC "name of first file" "name of second file"	both files need to be in the same directory
+
+How could having easy access to the entire history of a file make you a more efficient programmmer in the long term?
+differences in versions could be detected easily, debugging is more quick
+	e.g. dropbox (30 days), google drive (unlimited)
+
+version
+control
+systems
+
+	Any Editor	use offline	manual save
+
+manual	   Yes		   Yes		   Yes
+saving
+
+dropbox	   Yes		   No		   No
+
+google	   No		   No		   No
+drive
+
+Git	   Yes		   Yes		   Yes
+
+SVN	   Yes		   No		   Yes
+_________________
+
+definition: Commit
+	save a version with a short comment on the things changed (e.g. "color of ojects has changed")
+	a commit may contain several files at one time, if they are interrelated
+
+cmd commands on commits
+git log		show all commits of a file (changes made)
+			author, date, sort of change (description)
+
+git diff	compare different versions of a file whithin Git (via Git ID)
+
+
+What are pros and cons of manually choosing when to create a commit instead of saving every version?
+automatically saving every version can lead to a mess of versions with only small changes, making it harder
+to find an compare the really important versions from history
+
+_________________
+
+Tracking across files
+	repository	collection of files
+
+			repository
+	_________________________________________
+	|					|
+	|		commit			|
+	|		________		|
+	|game.js	|game.js|	game.js	|
+	|1:00		|2:43	|	5:12	|
+	|html		|html	|	html	|
+	|1:00		|2:43	|	5:12	|
+	|css		|css	|	css	|
+	|1:00		|2:43	|	5:12	|
+	|_______________________________________|
+
+cmd commands on repositories
+git log --stat		statisitics about which files are changed within a commit
+
+Why does some version control systems allow saving multiple files in one commit, rather than saving each file
+seperately?
+Some files could be interrelated to form the final program. It is important to detect changes in the whole program
+and not just in one file.
+
+_________________
+git clone	clone a whole repository form another location
+
+git config --globar color.ui auto	to geht colored diff output
+
+q	quit git log or git diff
+
+How can you use the commands git log and git diff to view the history of files?
+get commit ids with git log
+compare commit ids with git diff
+
+_________________
+
+git checkout	resetting the verison of the game temporarilary to an earlier version
+
+how might using version control make you more confident to make changes that could break something?
+With git checkout, it is easy to run an older version of the code, such that breaks could be undone without debugging.
+
+_________________
+
+mv "document name" "new document name"		move and change name of file in a directory
+
+git config --global core.editor "path and editor name -n -w" 	set a new standard code editor
+							-n	open editor in a new window
+							-w	force the editor to close window before continuing in gitbash
