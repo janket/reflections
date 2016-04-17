@@ -31,3 +31,46 @@ git reset --hard	discard any changes in the working directory and the staging ar
 
 git checkout master		if git checkout is used to run a version of an old commit, 
 				git checkout master will change back to the most recent version
+
+How can you use the stagin area to make sure you have one commit per logical change?
+use different "git diff" statements to ensure at which logical step you are
+_________________
+Use Branches		create multiple commits based on the same version
+
+git branch			show current created branches
+git branch "name of branch"	create a new branch
+git checkout "name of branch"	change the branch you look in with Git
+
+What are some situations when branches would be helpful in keeping your history organized?
+How would branches help?
+It could be helpful when you like to make changes to the orignial verison without loosing this version.
+For example changing the language of a code or if you like to develop two versions of the code parallel.
+Branch every time you insert new, experimentalgit c features e.g.
+
+git log -- graph --oneline "name of first branch" "name of second branch" (..".."..) 	show a visualization of all branches you like to see in one line
+
+git checkout --b "new branch name"	if you checkout a single commit from history, create a new branch from this checkout with changes made
+
+How do the diagrams help you visualize te branch structure?
+It helps to understand, which commits are reachable from a certain branch and when they will show up in git log
+
+__________________
+Combining simple files		two versions from different branches with multiple changes in each
+
+git merge
+	error message "file needs merge
+			error: you need to resolve your current index first
+	solve
+		git merge --abort	restore files to state before the merge
+		use git diff to find differences between the last files used (correct spaces and tabs for example)
+	
+	git config --global core.autocrlf true		different systems (windows, linux, mac) use different code information about "Enter" new line features
+							this code helps to solve "new line code" conflicts
+
+git show "commit id"		comparing a commit to its parent
+
+What is the result of merging two branches together?
+The files of the two branches where checked on differences in code back to the state where they were splitted up.
+Comparing these three files, Git can detect which lines are new and which are deletet, to merge the two branches correctly
+
+
