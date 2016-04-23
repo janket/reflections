@@ -35,5 +35,8 @@ Fast-forwart Merges
 	if you would like to merge a version with a hisoric file of the same version (so reachable in the branch)
 	Only the label is updated since the historic version is al included in the newer version.
 
+What is the benefit of having a copy of the last known stat of the remote sored locally?
+	it is possible to make fast-forward merges
+
 
 
