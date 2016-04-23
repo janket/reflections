@@ -17,10 +17,23 @@ _____________________
 Forking a Repository		
 	make a copy of a GitHub reposotpry only on GitHub without loading it to your computer
 
+_____________________
+Merge remote changess
+	if a file is changed local and at GitHub without updading
+
+git pull will automatically merge these files
+	git fetch "remote description"	makes a new branch locally from the GitHub changes without affecting the original local version
+					So no merging
+
 Describe the differences between forks, clones, and branches. When would you use one instead of another?
 	forks	clone a repository only on GitHub
 	clone	clone a repository from another location (GitHub) to your local repository
 	branch	make a copy of a version to make changes without affecting the orignial version.
+
+____________________
+Fast-forwart Merges
+	if you would like to merge a version with a hisoric file of the same version (so reachable in the branch)
+	Only the label is updated since the historic version is al included in the newer version.
 
 
 
