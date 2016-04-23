@@ -7,3 +7,20 @@ git remote add "name of remote" "https: githubadress"	create new remote link to 
 git remote -v 	show more information on a remote connection (verbose) as the remote adress
 
 git push "name of remote" "branch of repository"	choose which branch or the repositroy to push towards github
+
+Why might you want to always pull changes manually rather than
+having Git automatically stay up-to-date with your remote repository?
+You might not want to share all of your changes with others, so you will have more control of
+what you want to share with others if you pull manually
+
+_____________________
+Forking a Repository		
+	make a copy of a GitHub reposotpry only on GitHub without loading it to your computer
+
+Describe the differences between forks, clones, and branches. When would you use one instead of another?
+	forks	clone a repository only on GitHub
+	clone	clone a repository from another location (GitHub) to your local repository
+	branch	make a copy of a version to make changes without affecting the orignial version.
+
+
+

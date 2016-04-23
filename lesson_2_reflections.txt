@@ -73,4 +73,21 @@ What is the result of merging two branches together?
 The files of the two branches where checked on differences in code back to the state where they were splitted up.
 Comparing these three files, Git can detect which lines are new and which are deletet, to merge the two branches correctly
 
+conflicting codes by merging		git will ask for a manual solution if it does not know which line to keep in the merged code
+	after error in merge, open the file with the editor, without undo the merge
+		Git indicates conflicting lines of code with
+			<<<<<<< HEAD
+				section of branch 1
+			||||||| merged common ancestors
+				section which are in both branches
+			=======
+				section of master branch
+			>>>>>>> master
+
+_______________
+git log -n 1	show only the log for the chosen amount of commits (1)
+
+_______________
+What are the pros and cons of Git's automatic merging vs. always doing merges manually
+Git detects all differences in two files, but it often asks for manual help if some parts of the code aren't comparable.
 
