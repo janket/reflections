@@ -1,0 +1,9 @@
+use of GitHub
+
+git remote	show all existing remotes	
+
+git remote add "name of remote" "https: githubadress"	create new remote link to github
+
+git remote -v 	show more information on a remote connection (verbose) as the remote adress
+
+git push "name of remote" "branch of repository"	choose which branch or the repositroy to push towards github
