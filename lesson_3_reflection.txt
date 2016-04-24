@@ -45,3 +45,11 @@ How would you collaborate without using Git or FitHub? What would be easier, and
 	But merging would be harder and it would be also difficult to see which is the most actual version and
 	where the versions splitted up.
 
+__________________
+
+When would you want to make changes in a separate branch rather than directly in master?
+What benefits does each approach have?
+	By collaboratin with others, your changes would like to be checked by other before merging.
+	make changes directly in master can cause a loss of a working master branch.
+	Merging own seperate branches first is a little bit more work, but ensures a good collaboration opportunity.
+
