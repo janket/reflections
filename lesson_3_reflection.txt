@@ -38,5 +38,10 @@ Fast-forwart Merges
 What is the benefit of having a copy of the last known stat of the remote sored locally?
 	it is possible to make fast-forward merges
 
+___________________
 
+How would you collaborate without using Git or FitHub? What would be easier, and what would be harder?
+	I would use a system like drpobox to share my versions within different directories.
+	But merging would be harder and it would be also difficult to see which is the most actual version and
+	where the versions splitted up.
 
